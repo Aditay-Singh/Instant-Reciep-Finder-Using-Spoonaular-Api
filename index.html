@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neon Recipe Finder</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="bgCanvas" class="bg-canvas" aria-hidden="true"></canvas>
+
+  <main class="app">
+    <nav class="nav">
+      <div class="brand">
+        <span class="logo">✦</span>
+        <div>
+          <h1>Neon<span>Recipes</span></h1>
+          <p class="tag">Futuristic recipe discovery</p>
+        </div>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div class="glass search-glass">
+        <input id="ingredients" type="text" placeholder="e.g. chicken, garlic, tomato">
+        <button id="searchBtn" class="btn neon">Search</button>
+      </div>
+      <p class="hint">Enter comma-separated ingredients — press Search</p>
+    </section>
+
+    <section id="recipes" class="grid"></section>
+
+    <footer class="footer">
+      <small>Powered by Spoonacular API • Neon UI</small>
+    </footer>
+    <p class="modal-used"></p>
+<p class="modal-missed"></p>
+<div class="modal-instructions"></div>
+<a class="modal-link" href="#" target="_blank">View Full Recipe</a>
+
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
